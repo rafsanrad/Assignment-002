@@ -15,6 +15,17 @@
 .special-text-color{
     color: #E95A08;
 }
+.font-inter{
+    font-family: "Inter", sans-serif;
+}
+.btn{
+    background-color: #E95A08;
+    color: white;
+    width: 270px;
+    height: 50px;
+    border: none;
+    margin-top: 20px;
+}
 /* custom styles */
 /* header section style */
 .navbar{
@@ -42,8 +53,45 @@
     color: rgba(0, 0, 0, 0.5);
     font-size: 22px;
 }
+/* main section styles  */
+.card-section{
+    margin: 150px auto;
+}
+.card-holder{
+    width: 270px;
+    height: 485px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    margin-left: 50px;
+}
+.card-holder img{
+    margin-bottom: 20px;
+}
+.card-section-title{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.card-section-description{
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin: 15px 125px 50px;
+}
+.card-title{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.card-subtitle{
+    font-size: 22px;
+    font-weight: bold;
+}
 /* responsive for mobile  */
 @media screen and (max-width:576px){
+    /* header section  */
     .nav-items>span{
         display: none;
     }
@@ -56,6 +104,18 @@
     }
     .banner img{
         width: 100%;
+    }
+    /* card section  */
+    .card-holder{
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 8px;
+        gap: 20px;
+    }
+    .card-holder img{
+        width: 100%;
+    }
+    .card-section-description{
+        margin: 15px 20px 50px;
     }
     
 }
