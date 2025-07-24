@@ -186,6 +186,40 @@
     font-weight: 500;
     color: white;
 }
+/* input section styles  */
+.input-section{
+    width: 100% ;
+    height: 533px;
+    background-image: url(./assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input-section h2{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+.input-field{
+    display: flex;
+}
+.email{
+    width: 645px;
+    height: 50px;
+    border: none;
+    padding-left: 20px;
+}
+.btn{
+    width: 186px;
+    height: 50px;
+    background-color: #E95A08 ;
+    color: white;
+    border: none;
+}
 /* responsive for mobile  */
 @media screen and (max-width:576px){
     /* header section  */
@@ -245,5 +279,26 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
-
+    /* input section  */
+    .input-section{
+        width: 100%;
+    }
+    .input-field{
+        width: 90%;
+    }
+    .input-section h2{
+        font-size: 40px;
+    }
+    .email{
+        width: 320px;
+        height: 80px;
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .btn{
+        height: 80px;
+        font-size: 30px;
+        font-weight: 500;
+    }
 }
