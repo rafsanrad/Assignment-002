@@ -56,6 +56,7 @@
 /* main section styles  */
 .card-section{
     margin: 150px auto;
+    margin-bottom: 750px;
 }
 .card-holder{
     width: 270px;
@@ -89,6 +90,33 @@
     font-size: 22px;
     font-weight: bold;
 }
+/* badge section styles  */
+.badge-section{
+    margin: 150px auto;
+}
+ .badge-holder{
+    display: flex;
+    gap: 70px;
+ }
+ .badge-img{
+    width: 285px;
+    height: 285px;
+    transform: translateX(-230px) translateY(-630px);
+ }
+ .badge-title{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 40px 10px 20px 20px;
+ }
+ .badge-list{
+    margin: 10px 10px 10px 50px;
+ }
+ .badge-list>li{
+    font-size: 22px;
+    color:  rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    font-family: "Inter", sans-serif;
+ }
 /* responsive for mobile  */
 @media screen and (max-width:576px){
     /* header section  */
@@ -106,6 +134,9 @@
         width: 100%;
     }
     /* card section  */
+    .card-section{
+        margin-bottom: 1600px ;
+    }
     .card-holder{
         grid-template-columns: repeat(2,1fr);
         margin-left: 8px;
@@ -113,9 +144,22 @@
     }
     .card-holder img{
         width: 100%;
+        
     }
     .card-section-description{
         margin: 15px 20px 50px;
+    }
+    /* badge section  */
+    .badge-holder{
+        flex-direction: column;
+    }
+    .badge-holder img{
+        width: 96.5%;
+        margin-left: 10px;
+        margin-bottom: -30px;
+    }
+    .badge-img{
+        display: none;
     }
     
 }
