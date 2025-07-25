@@ -97,11 +97,32 @@
  .badge-holder{
     display: flex;
     gap: 70px;
+    position: relative;
+ }
+ @keyframes  spin {
+    0% {
+        transform: rotate(25deg);
+    }
+    25% {
+        transform: rotate(50deg);
+    }
+    50%{
+        transform: rotate(100deg);
+    }
+    75%{
+        transform: rotate(200deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
  }
  .badge-img{
     width: 285px;
     height: 285px;
-    transform: translateX(-230px) translateY(-630px);
+    position: absolute;
+    top: -21%;
+    right: 50%;
+    animation: spin 1s linear infinite;
  }
  .badge-title{
     font-size: 50px;
@@ -120,16 +141,20 @@
 
  /* latest deal section styles  */
  .deal-section{
-    margin-top: -150px;
+    margin-top: 150px;
     margin-bottom: 100px;
  }
  .deal-section p{
     margin-bottom: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
  }
  .deal-section h2,.deal-section p{
     text-align: center;
  }
- 
+ .deal-section h2{
+    margin-bottom: 20px;
+ }
  .deal-title{
     font-size: 50px;
     font-weight: bold;
@@ -306,6 +331,9 @@
         flex-direction: column;
         margin-left: 10px;
         margin-right: 10px;
+    }
+    .deal-section p{
+        margin:40px auto;
     }
     .box-1,.box-2,.box-3{
         width: 100%;
